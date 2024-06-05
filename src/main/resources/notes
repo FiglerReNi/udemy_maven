@@ -1,1 +1,26 @@
-transitive dependencies: A pom.xml-be behúzott dependenciáknak további függőségeik vannak, amit hoznak magukkal
+Udemy - Spring Framework Master Class - Java Spring the Modern Way
+Section 13 - Maven
+Jegyzetek:
+  transitive dependencies:
+    A pom.xml-be behúzott dependenciáknak további függőségeik vannak, amit hoznak magukkal.
+  maven:
+    - behúzza a dependenciákat és a transitive dependenciákat is
+    - maven lifecycle
+  parent-pom:
+    spring-boot-starter-parent és spring-boot-dependencies
+      - ezekben csomó előre definiál plugin és konfiguráció van
+      - illetve előre beállított verziók, így a saját pom.xml-ünkben nem kell verziószámot írni,
+        csak ha valamiért nem jó nekünk a default verzió.
+  effective pom:
+    Ebben látjuk a verziókat az egyes depencdenciákhoz. Ha nem adunk meg külön verziót a saját pom.xml-ünkben,
+    akkor ezt fogja használni.
+  pom.xml:
+    A central repository-n kívül, másik repository is megadható, ahonnan dependenciákat szeretnénk letölteni
+  Parancsok:
+    mvn --version
+  Verziók:
+    snapshot - fejlesztés alatt van
+    M1-M5 - milestone verziók (köztes verziók)
+    RC1,RC2 - kiadásra jelölt verziók (köztes verziók)
+    release - végleges verzió, prodon csak ilyet használunk
+
